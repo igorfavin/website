@@ -24,7 +24,7 @@ paths:
         - accounts
       operationId: findAccounts
       summary: Finds all accounts
-  '/accounts/groupid/{id}':
+  '/v1/users/{id}':
     delete:
       parameters:
         - description: |
@@ -104,7 +104,7 @@ paths:
       description: 'You can PUT, POST, and DELETE using this resource URL.'
       operationId: findGroupsByName
       summary: Finds groups by name
-  '/accounts/userid/{id}':
+  '/v1/userid/{id}':
     delete:
       parameters:
         - description: Id value to filter by
@@ -166,7 +166,7 @@ paths:
       description: You cannot change information in an LDAP account or change a password with a PUT.
       operationId: updateUserById
       summary: Updates an existing user by id
-  '/accounts/username/{name}':
+  '/v1/users/{name}':
     get:
       parameters:
         - description: Name to filter by
